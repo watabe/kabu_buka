@@ -1,0 +1,64 @@
+# TODO
+
+## Features
+
+- [ ] Yahoo!ファイナンスの情報取得 → [docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得.md](docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得.md)
+- [ ] Yahoo!ファイナンスの情報取得 調査結果 → [docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_調査結果.md](docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_調査結果.md)
+- [ ] Yahoo!ファイナンスの情報取得 機能ドキュメント → [docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_ドキュメント.md](docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_ドキュメント.md)
+- [x] テスト実装 (tests/test_fetcher.py, tests/test_display.py) ← [ドキュメント](docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_ドキュメント.md) に基づく 26テスト、全 PASSED
+- [x] 機能実装 (src/models.py, src/fetcher.py, src/display.py, main.py) ← [ドキュメント](docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_ドキュメント.md) に基づく実装完了
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260220_Yahoo!ファイナンスの情報取得_ドキュメント.md) の全 Goals・エラーハンドリング・出力フォーマットを確認済み (26/26 テスト PASSED)
+- [ ] [GAP] 明示的な10秒タイムアウト未設定 ← yfinance が requests_session を外部から受け取る形に変更が必要
+- [ ] 取得した情報を一日分グラフ表示する → [docs/feature-dev/20260220_取得した情報を一日分グラフ表示する.md](docs/feature-dev/20260220_取得した情報を一日分グラフ表示する.md)
+- [ ] 取得した情報を一日分グラフ表示する 調査結果 → [docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_調査結果.md](docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_調査結果.md)
+- [ ] 取得した情報を一日分グラフ表示する 機能ドキュメント → [docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_ドキュメント.md](docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_ドキュメント.md)
+- [x] テスト実装 (tests/test_chart.py 新規8件, tests/test_fetcher.py 追記8件) ← [ドキュメント](docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_ドキュメント.md) に基づく 16テスト、全 PASSED
+- [x] 機能実装 (src/fetcher.py, src/chart.py, main.py) ← [ドキュメント](docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_ドキュメント.md) に基づく実装完了 (42/42 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260220_取得した情報を一日分グラフ表示する_ドキュメント.md) の全 Goals・エラーハンドリングを確認済み (42/42 テスト PASSED)
+- [ ] [NOTE] 非 TTY 環境での stderr/stdout 出力順: stdout バッファリングにより stderr (エラー) が先に表示される場合あり（実端末では問題なし）
+- [ ] チャート表示時の文字化け解消 → [docs/feature-dev/20260220_チャート表示時の文字化け解消.md](docs/feature-dev/20260220_チャート表示時の文字化け解消.md)
+- [ ] チャート表示時の文字化け解消 調査結果 → [docs/feature-dev/20260220_チャート表示時の文字化け解消_調査結果.md](docs/feature-dev/20260220_チャート表示時の文字化け解消_調査結果.md)
+- [ ] チャート表示時の文字化け解消 機能ドキュメント → [docs/feature-dev/20260221_チャート表示時の文字化け解消_ドキュメント.md](docs/feature-dev/20260221_チャート表示時の文字化け解消_ドキュメント.md)
+- [x] テスト実装 (tests/test_chart.py 追記9件) ← [ドキュメント](docs/feature-dev/20260221_チャート表示時の文字化け解消_ドキュメント.md) に基づく 9テスト、全 PASSED
+- [x] 機能実装 (src/chart.py) ← [ドキュメント](docs/feature-dev/20260221_チャート表示時の文字化け解消_ドキュメント.md) に基づく実装完了 (53/53 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260221_チャート表示時の文字化け解消_ドキュメント.md) の全 Goals・後退テストを確認済み (53/53 テスト PASSED)
+- [ ] チャート常にCUIで取得した会社情報も全て表示する → [docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する.md](docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する.md)
+- [ ] チャート常にCUIで取得した会社情報も全て表示する 調査結果 → [docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_調査結果.md](docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_調査結果.md)
+- [ ] チャート常にCUIで取得した会社情報も全て表示する 機能ドキュメント → [docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_ドキュメント.md](docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_ドキュメント.md)
+- [x] テスト実装 (tests/test_chart.py 追記7件、既存19件引数更新) ← [ドキュメント](docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_ドキュメント.md) に基づく 7テスト、全 PASSED
+- [x] 機能実装 (src/chart.py, main.py) ← [ドキュメント](docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_ドキュメント.md) に基づく実装完了 (60/60 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260221_チャート常にCUIで取得した会社情報も全て表示する_ドキュメント.md) の全 Goals・エッジケースを確認済み (60/60 テスト PASSED)
+- [ ] チャート表示の自動更新 → [docs/feature-dev/20260221_チャート表示の自動更新.md](docs/feature-dev/20260221_チャート表示の自動更新.md)
+- [ ] チャート表示の自動更新 調査結果 → [docs/feature-dev/20260221_チャート表示の自動更新_調査結果.md](docs/feature-dev/20260221_チャート表示の自動更新_調査結果.md)
+- [ ] チャート表示の自動更新 機能ドキュメント → [docs/feature-dev/20260221_チャート表示の自動更新_ドキュメント.md](docs/feature-dev/20260221_チャート表示の自動更新_ドキュメント.md)
+- [x] テスト実装 (tests/test_chart.py 追記10件) ← [ドキュメント](docs/feature-dev/20260221_チャート表示の自動更新_ドキュメント.md) に基づく 10テスト、全 PASSED
+- [x] 機能実装 (src/chart.py, main.py) ← [ドキュメント](docs/feature-dev/20260221_チャート表示の自動更新_ドキュメント.md) に基づく実装完了 (70/70 PASSED)
+- [ ] 企業情報をわかりやすく表示させる → [docs/feature-dev/20260222_企業情報をわかりやすく表示させる.md](docs/feature-dev/20260222_企業情報をわかりやすく表示させる.md)
+- [ ] 企業情報をわかりやすく表示させる 調査結果 → [docs/feature-dev/20260222_企業情報をわかりやすく表示させる_調査結果.md](docs/feature-dev/20260222_企業情報をわかりやすく表示させる_調査結果.md)
+- [ ] 企業情報をわかりやすく表示させる 機能ドキュメント → [docs/feature-dev/20260222_企業情報をわかりやすく表示させる_ドキュメント.md](docs/feature-dev/20260222_企業情報をわかりやすく表示させる_ドキュメント.md)
+- [x] テスト変更 (tests/test_chart.py 5件変更) ← [ドキュメント](docs/feature-dev/20260222_企業情報をわかりやすく表示させる_ドキュメント.md) に基づく変更、TDD レッド確認済み (65 PASSED, 5 FAILED)
+- [x] 機能実装 (src/chart.py) ← [ドキュメント](docs/feature-dev/20260222_企業情報をわかりやすく表示させる_ドキュメント.md) に基づく実装完了 (70/70 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260222_企業情報をわかりやすく表示させる_ドキュメント.md) の全 Goals を確認済み (70/70 テスト PASSED)
+- [ ] Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい → [docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい.md](docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい.md)
+- [ ] Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい 調査結果 → [docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_調査結果.md](docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_調査結果.md)
+- [ ] Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい 機能ドキュメント → [docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_ドキュメント.md](docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_ドキュメント.md)
+- [x] テスト変更・追加 (tests/test_chart.py: 5件変更 + TestBuildInfoParts 7件追加) ← [ドキュメント](docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_ドキュメント.md) に基づく変更、TDD レッド確認済み (31 PASSED, 12 FAILED)
+- [x] 機能実装 (src/chart.py) ← [ドキュメント](docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_ドキュメント.md) に基づく実装完了 (77/77 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260224_Yahoo!ファイナンスのようにもっと企業情報をわかりやすく表示させたい_ドキュメント.md) の全 Goals を確認済み (77/77 テスト PASSED)
+- [ ] チャート画面で文字が被ったりしている見やすいように対応してほしい → [docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい.md](docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい.md)
+- [ ] チャート画面で文字が被ったりしている見やすいように対応してほしい 調査結果 → [docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_調査結果.md](docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_調査結果.md)
+- [ ] チャート画面で文字が被ったりしている見やすいように対応してほしい 機能ドキュメント → [docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_ドキュメント.md](docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_ドキュメント.md)
+- [x] テスト変更・追加 (tests/test_chart.py: 1件変更 + 2件追加) ← [ドキュメント](docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_ドキュメント.md) に基づく変更、TDD レッド確認済み (42 PASSED, 3 FAILED)
+- [x] 機能実装 (src/chart.py) ← [ドキュメント](docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_ドキュメント.md) に基づく実装完了 (79/79 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260224_チャート画面で文字が被ったりしている見やすいように対応してほしい_ドキュメント.md) の全 Goals を確認済み (79/79 テスト PASSED)
+- [ ] チャートから予測をする機能が欲しい → [docs/feature-dev/20260224_チャートから予測をする機能が欲しい.md](docs/feature-dev/20260224_チャートから予測をする機能が欲しい.md)
+- [ ] チャートから予測をする機能が欲しい 機能ドキュメント → [docs/feature-dev/20260224_チャートから予測をする機能が欲しい_ドキュメント.md](docs/feature-dev/20260224_チャートから予測をする機能が欲しい_ドキュメント.md)
+- [x] テスト実装 (tests/test_predictor.py 新規14件, tests/test_chart.py 追記8件, tests/test_main.py 新規3件) ← [ドキュメント](docs/feature-dev/20260224_チャートから予測をする機能が欲しい_ドキュメント.md) に基づく 25テスト、TDD レッド確認済み (81 PASSED, 23 FAILED)
+- [x] 機能実装 (src/predictor.py 新規, src/chart.py, main.py) ← [ドキュメント](docs/feature-dev/20260224_チャートから予測をする機能が欲しい_ドキュメント.md) に基づく実装完了 (104/104 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260224_チャートから予測をする機能が欲しい_ドキュメント.md) の全 Goals・後退テストを確認済み (104/104 テスト PASSED)
+- [ ] intervalを設定してもグラフの更新が自動で行われていない → [docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない.md](docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない.md)
+- [ ] intervalを設定してもグラフの更新が自動で行われていない 調査結果 → [docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_調査結果.md](docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_調査結果.md)
+- [ ] intervalを設定してもグラフの更新が自動で行われていない 機能ドキュメント → [docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_ドキュメント.md](docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_ドキュメント.md)
+- [x] テスト変更・追加 (tests/test_chart.py: 9件変更 + 2件追加) ← [ドキュメント](docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_ドキュメント.md) に基づく変更、TDD レッド確認済み (44 PASSED, 11 FAILED)
+- [x] 機能実装 (src/chart.py) ← [ドキュメント](docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_ドキュメント.md) に基づく実装完了 (108/108 PASSED)
+- [x] 動作検証完了 ← [ドキュメント](docs/feature-dev/20260311_intervalを設定してもグラフの更新が自動で行われていない_ドキュメント.md) の全 Goals・後退テストを確認済み (108/108 テスト PASSED)
